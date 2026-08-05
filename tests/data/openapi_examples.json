@@ -1,0 +1,1285 @@
+{
+ "/services/biometric/media/": {
+  "200": {
+   "response_body": {
+    "id": "<UUID>",
+    "type": "selfie_video"
+   },
+   "result": 1
+  }
+ },
+ "/services/biometric/session/liveness/": {
+  "200": {
+   "response_body": {
+    "session_id": "<UUID>",
+    "status": "pending"
+   },
+   "result": 1
+  }
+ },
+ "/services/biometric/session/{id}/result": {
+  "200": {
+   "response_body": {
+    "completed_at": null,
+    "reason": "ACCEPT",
+    "result": "matched",
+    "status": "completed",
+    "type": "liveness"
+   },
+   "result": 1
+  }
+ },
+ "/services/inquiry/account_to_iban": {
+  "200": {
+   "response_body": {
+    "data": {
+     "IBAN": "IR700620000000XXX295898001"
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  }
+ },
+ "/services/inquiry/bill/electricity": {
+  "200": {
+   "response_body": {
+    "data": {
+     "account_type": "خانگی",
+     "address": "آدرس کامل واحد استعلام شده",
+     "amount": 0,
+     "bill_id": "xxxxxxxxxxxx",
+     "current_date": "14xx/xx/xx",
+     "full_name": "نام مالک",
+     "payment_date": "14xx/xx/xx",
+     "payment_id": "x",
+     "previous_date": "14xx/xx/xx"
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  }
+ },
+ "/services/inquiry/bill/fixed_line": {
+  "200": {
+   "response_body": {
+    "data": {
+     "final_term": {
+      "amount": 1000,
+      "bill_id": "xxxxxxxxxx",
+      "payment_id": "xxxxxxxxxx"
+     },
+     "mid_term": {
+      "amount": 1000,
+      "bill_id": "xxxxxxxxxx",
+      "payment_id": "xxxxxxxxxx"
+     }
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  }
+ },
+ "/services/inquiry/bill/gas": {
+  "200": {
+   "response_body": {
+    "data": {
+     "address": "تهران",
+     "amount": 100000,
+     "bill_id": "123456789",
+     "consumption_type": " خانگي بدون چیلر",
+     "current_reading_date": "1304/09/11",
+     "full_name": "نام مالک",
+     "payment_date": "1304/09/21",
+     "payment_id": "1234567890",
+     "previous_reading_date": "1304/06/12"
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  }
+ },
+ "/services/inquiry/bill/irancell": {
+  "200": {
+   "response_body": {
+    "data": {
+     "final_term": {
+      "amount": 1000,
+      "bill_id": "xxxxxxxxxx",
+      "payment_id": "xxxxxxxxxx"
+     },
+     "mid_term": {
+      "amount": 1000,
+      "bill_id": "xxxxxxxxxx",
+      "payment_id": "xxxxxxxxxx"
+     }
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  }
+ },
+ "/services/inquiry/bill/mci": {
+  "200": {
+   "response_body": {
+    "data": {
+     "final_term": {
+      "amount": 1000,
+      "bill_id": "xxxxxxxxxx",
+      "payment_id": "xxxxxxxxxx"
+     },
+     "mid_term": {
+      "amount": 1000,
+      "bill_id": "xxxxxxxxxx",
+      "payment_id": "xxxxxxxxxx"
+     }
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  }
+ },
+ "/services/inquiry/bill/rightel": {
+  "200": {
+   "response_body": {
+    "data": {
+     "final_term": {
+      "amount": 1000,
+      "bill_id": "xxxxxxxxxx",
+      "payment_id": "xxxxxxxxxx"
+     },
+     "mid_term": {
+      "amount": 1000,
+      "bill_id": "xxxxxxxxxx",
+      "payment_id": "xxxxxxxxxx"
+     }
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  }
+ },
+ "/services/inquiry/bill/water": {
+  "200": {
+   "response_body": {
+    "data": {
+     "account_type": "مسکونی",
+     "address": "آدرس کامل واحد استعلام شده",
+     "amount": 0,
+     "bill_id": "xxxxxxxxxxxx",
+     "current_date": "14xx/xx/xx",
+     "full_name": "نام مالک",
+     "payment_date": "14xx/xx/xxx",
+     "payment_id": "xxxxxxxxxx",
+     "previous_date": "14xx/xx/xx"
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  }
+ },
+ "/services/inquiry/bounced_cheque": {
+  "200": {
+   "response_body": {
+    "data": {
+     "count": 0
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  }
+ },
+ "/services/inquiry/card_inquiry": {
+  "200": {
+   "response_body": {
+    "data": {
+     "name": "نام صاحب کارت "
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  }
+ },
+ "/services/inquiry/card_to_account": {
+  "200": {
+   "response_body": {
+    "data": {
+     "bank_account": "شماره حساب",
+     "bank_name": "نام بانک",
+     "name": "نام صاحب کارت "
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  }
+ },
+ "/services/inquiry/card_to_iban": {
+  "200": {
+   "response_body": {
+    "data": {
+     "IBAN": "IRXXXXXXXXXXX",
+     "bank_name": "آینده",
+     "name": "نام صاحب کارت"
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  }
+ },
+ "/services/inquiry/check_card_with_name": {
+  "200": {
+   "response_body": {
+    "data": {
+     "name": "نام صاحب کارت"
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  }
+ },
+ "/services/inquiry/check_card_with_national_code": {
+  "200": {
+   "response_body": {
+    "data": {
+     "matched": true
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  }
+ },
+ "/services/inquiry/check_iban_with_name": {
+  "200": {
+   "response_body": {
+    "data": {
+     "matched": true
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  }
+ },
+ "/services/inquiry/check_iban_with_national_code": {
+  "200": {
+   "response_body": {
+    "data": {
+     "matched": true
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  }
+ },
+ "/services/inquiry/check_sayad_inquiry": {
+  "200": {
+   "response_body": {
+    "data": {
+     "branch_code": "56XXX48",
+     "check_type": "BANS",
+     "expiration_date": null,
+     "iban": "IR02XXX00XXXXX0049XXXXX001",
+     "issue_date": "1370/1/1",
+     "name": "نام صادرکننده چک",
+     "returned_cheques": "",
+     "sayad_id": "12XXXXXXXXX000000",
+     "serial_no": "95XXX1",
+     "series_no": "4XXX4"
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  }
+ },
+ "/services/inquiry/check_sayad_inquiry/chain": {
+  "200": {
+   "response_body": {
+    "data": {
+     "chain": [
+      {
+       "customers": [
+        {
+         "customer_type": 1,
+         "name": "نام فرد یا شرکت",
+         "national_code": "کد ملی یا شناسه ملی"
+        }
+       ],
+       "role_type": 1
+      },
+      {
+       "customers": [
+        {
+         "customer_type": 1,
+         "name": "نام فرد یا شرکت",
+         "national_code": "کد ملی یا شناسه ملی"
+        }
+       ],
+       "role_type": 2
+      },
+      {
+       "customers": [
+        {
+         "customer_type": 1,
+         "name": "نام فرد یا شرکت",
+         "national_code": "کد ملی یا شناسه ملی"
+        }
+       ],
+       "role_type": 3
+      }
+     ]
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  }
+ },
+ "/services/inquiry/company_inquiry": {
+  "200": {
+   "response_body": {
+    "data": {
+     "activity_end_date": "",
+     "address": "استان تهران، شهرستان تهران، بخش مرکزی، شهر تهران، انقلاب-فلسطین، خیابان 12 فروردین، خیابان انقلاب اسلامی، پلاک 1500، طبقه 1، واحد 1",
+     "company_type": "شرکت سهامی خاص",
+     "created_at": "1400/01/01-12:00",
+     "email_address": "",
+     "fax_number": "",
+     "issuance_date": "1400/01/01",
+     "name": "راهکار نوین هیوا",
+     "national_id": "1400XXXXXX0",
+     "phone_number": null,
+     "postal_code": "131XXXXXX3",
+     "register_date": "1400/01/01",
+     "register_number": "43XXX0"
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  },
+  "400": {
+   "response_body": {
+    "data": {},
+    "error_code": "NATIONAL_ID_INVALID",
+    "message": "شناسه ملی اشتباه است."
+   },
+   "result": 6
+  }
+ },
+ "/services/inquiry/company_inquiry/board_members": {
+  "200": {
+   "response_body": {
+    "data": {
+     "board_members": [
+      {
+       "duration": "G:تا پایان سال مالی",
+       "name": "نام بازرس اصلی",
+       "position": "بازرس اصلی",
+       "start_date": "1403/07/07"
+      },
+      {
+       "duration": "G:تا پایان سال مالی",
+       "name": "نام بازرس علی البدل",
+       "position": "بازرس علی البدل",
+       "start_date": "1403/07/07"
+      },
+      {
+       "duration": "G:تا تاریخ 07/07/1405",
+       "name": "نام رییس هیأت مدیره",
+       "position": "رییس هیأت مدیره",
+       "start_date": "1403/07/07"
+      },
+      {
+       "duration": "G:تا تاریخ 07/07/1405",
+       "name": "نایب رییس هیأت مدیره",
+       "position": "نایب رییس هیأت مدیره",
+       "start_date": "1403/07/07"
+      },
+      {
+       "duration": "G:تا تاریخ 07/07/1405",
+       "name": "نام مدیرعامل و عضو هیأت مدیره",
+       "position": "مدیر عامل و عضو هیأت مدیره",
+       "start_date": "1403/07/07"
+      }
+     ],
+     "company_title": "نام شرکت"
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  }
+ },
+ "/services/inquiry/company_inquiry/board_members/history": {
+  "200": {
+   "response_body": {
+    "data": {
+     "board_members": [
+      {
+       "duration": "2 سال",
+       "end_date": "1399/01/01",
+       "name": "نام مدیر عامل",
+       "position": "مدیر عامل",
+       "start_date": "1397/01/01"
+      },
+      {
+       "duration": "2 سال",
+       "end_date": "1399/01/01",
+       "name": "نام رییس هییت مدیره",
+       "position": "رییس هییت مدیره",
+       "start_date": "1397/01/01"
+      },
+      {
+       "duration": "2 سال",
+       "end_date": "1399/01/01",
+       "name": "نام نایب رییس هییت مدیره",
+       "position": "نایب رییس هییت مدیره",
+       "start_date": "1397/01/01"
+      },
+      {
+       "duration": "1 سال مالی",
+       "end_date": "1398/01/01",
+       "name": "نام بازرس اصلی",
+       "position": "بازرس اصلی",
+       "start_date": "1397/01/01"
+      },
+      {
+       "duration": "1 سال مالی",
+       "end_date": "1398/01/01",
+       "name": "نام بازرس علی البدل",
+       "position": "بازرس علی‌البدل",
+       "start_date": "1397/01/01"
+      },
+      {
+       "duration": "1 سال",
+       "end_date": "1400/01/01",
+       "name": "نام بازرس اصلی",
+       "position": "بازرس اصلی",
+       "start_date": "1399/01/01"
+      },
+      {
+       "duration": "1 سال",
+       "end_date": "1400/01/01",
+       "name": "نام بازرس علی البدل",
+       "position": "بازرس علی‌البدل",
+       "start_date": "1399/01/01"
+      },
+      {
+       "duration": "2 سال",
+       "end_date": "1401/01/01",
+       "name": "نام رییس هییت مدیره",
+       "position": "رییس هییت مدیره",
+       "start_date": "1399/01/01"
+      },
+      {
+       "duration": "2 سال",
+       "end_date": "1401/01/01",
+       "name": "نام مدیرعامل",
+       "position": "مدیر عامل و عضو هییت مدیره",
+       "start_date": "1399/01/01"
+      },
+      {
+       "duration": "2 سال",
+       "end_date": "1401/01/01",
+       "name": "نام نایب رییس هییت مدیره",
+       "position": "نایب رییس هییت مدیره",
+       "start_date": "1399/01/01"
+      },
+      {
+       "duration": "2 سال",
+       "end_date": "1401/01/01",
+       "name": "نام عضو هییت مدیره",
+       "position": "عضو هییت مدیره",
+       "start_date": "1399/01/01"
+      },
+      {
+       "duration": "2 سال",
+       "end_date": "1402/01/01",
+       "name": "نام رییس هییت مدیره",
+       "position": "رییس هییت مدیره",
+       "start_date": "1400/01/01"
+      },
+      {
+       "duration": "2 سال",
+       "end_date": "1402/01/01",
+       "name": "نام نایب رییس هییت مدیره",
+       "position": "نایب رییس هییت مدیره",
+       "start_date": "1400/01/01"
+      },
+      {
+       "duration": "2 سال",
+       "end_date": "1402/01/01",
+       "name": "نام مدیرعامل",
+       "position": "مدیر عامل و عضو هییت مدیره",
+       "start_date": "1400/01/01"
+      },
+      {
+       "duration": "1 سال مالی",
+       "end_date": null,
+       "name": "نام بازرس اصلی",
+       "position": "بازرس اصلی",
+       "start_date": "1400/03/30"
+      },
+      {
+       "duration": "1 سال مالی",
+       "end_date": null,
+       "name": "نام بازرس علی‌البدل",
+       "position": "بازرس علی‌البدل",
+       "start_date": "1400/03/30"
+      },
+      {
+       "duration": "G:تا تاریخ 01/07/1405",
+       "end_date": null,
+       "name": "نام رییس هییت مدیره",
+       "position": "رییس هیأت مدیره",
+       "start_date": "1403/07/01"
+      },
+      {
+       "duration": "G:تا تاریخ 01/07/1405",
+       "end_date": null,
+       "name": "نام نایب رییس هییت مدیره",
+       "position": "نایب رییس هیأت مدیره",
+       "start_date": "1403/07/01"
+      },
+      {
+       "duration": "G:تا تاریخ 01/07/1405",
+       "end_date": null,
+       "name": "نام مدیرعامل",
+       "position": "مدیر عامل و عضو هیأت مدیره",
+       "start_date": "1403/07/01"
+      },
+      {
+       "duration": "G:تا پایان سال مالی",
+       "end_date": null,
+       "name": "نام بازرس اصلی",
+       "position": "بازرس اصلی",
+       "start_date": "1403/07/01"
+      },
+      {
+       "duration": "G:تا پایان سال مالی",
+       "end_date": null,
+       "name": "نام بازرس علی البدل",
+       "position": "بازرس علی البدل",
+       "start_date": "1403/07/01"
+      }
+     ],
+     "company_title": "نام شرکت"
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  }
+ },
+ "/services/inquiry/credit_inquiry/result/{reference_id}": {
+  "200": {
+   "response_body": {
+    "data": {
+     "completed_at": "20xx-xx-xxTxx:xx:xx.166000",
+     "reference_id": "69061561dXXXXXXXX10fb63e",
+     "result": {
+      "bounced_cheque": {
+       "bounced_cheques": null,
+       "status": 404
+      },
+      "direct_contracts": [
+       {
+        "accounting_date": "140x/xx/xx",
+        "contract_currency": "ریال",
+        "contract_currency_code": "01xxxx3",
+        "contract_id": 0,
+        "contract_number": "410-xxxx-xxxxxxxx-1",
+        "contract_start_date_is_transaction_type": false,
+        "customer_role": 13,
+        "customer_role_code": "0xxxx33",
+        "customer_role_title": "متقاضی اصلی",
+        "expected_end_date": "140x/xx/xx",
+        "guarantees": [],
+        "installments_currency": "ریال",
+        "installments_currency_code": "0xxxx33",
+        "instalment_amount": 10000,
+        "negative_contract_status": "فاقد وضعیت منفی",
+        "negative_contract_status_code": "01xxxx3",
+        "organization_name": "بانک پاسارگاد",
+        "organization_name_code": "01xxxx3",
+        "organization_type": "بانک ها و موسسات اعتباری",
+        "organization_type_code": "01xxxx",
+        "outstanding_amount": 0,
+        "overdue_amount": 0,
+        "payment_method": "پرداخت مستقیم (نقدی)",
+        "payment_method_code": "01xxxx3",
+        "payment_periodicity": "نامنظم",
+        "payment_periodicity_code": "01xxxx3",
+        "phase_of_operation": 95,
+        "phase_of_operation_code": "0xxxxx3",
+        "phase_of_operation_title": "خاتمه یافته به درخواست مشتری",
+        "purpose_of_the_credit": "سایر",
+        "purpose_of_the_credit_code": "01xxxx3",
+        "real_end_date": "14xx/xx/xx",
+        "related_persons": [],
+        "repayments": [
+         {
+          "date": "140x/x",
+          "negative_contract_status": 0,
+          "overdue_amount": null,
+          "total_number_of_overdue": null
+         },
+         {
+          "date": "140x/x",
+          "negative_contract_status": 0,
+          "overdue_amount": null,
+          "total_number_of_overdue": null
+         },
+         {
+          "date": "140x/x",
+          "negative_contract_status": 0,
+          "overdue_amount": null,
+          "total_number_of_overdue": null
+         },
+         {
+          "date": "140x/x",
+          "negative_contract_status": 0,
+          "overdue_amount": null,
+          "total_number_of_overdue": null
+         },
+         {
+          "date": "140x/x",
+          "negative_contract_status": 0,
+          "overdue_amount": null,
+          "total_number_of_overdue": null
+         },
+         {
+          "date": "140x/x",
+          "negative_contract_status": 0,
+          "overdue_amount": null,
+          "total_number_of_overdue": null
+         },
+         {
+          "date": "140x/x",
+          "negative_contract_status": 0,
+          "overdue_amount": null,
+          "total_number_of_overdue": null
+         },
+         {
+          "date": "140x/xx",
+          "negative_contract_status": 0,
+          "overdue_amount": null,
+          "total_number_of_overdue": null
+         },
+         {
+          "date": "140x/xx",
+          "negative_contract_status": 0,
+          "overdue_amount": null,
+          "total_number_of_overdue": null
+         },
+         {
+          "date": "140x/xx",
+          "negative_contract_status": 0,
+          "overdue_amount": null,
+          "total_number_of_overdue": null
+         },
+         {
+          "date": "14xx/x",
+          "negative_contract_status": 0,
+          "overdue_amount": 0,
+          "total_number_of_overdue": 0
+         },
+         {
+          "date": "140x/x",
+          "negative_contract_status": 0,
+          "overdue_amount": 0,
+          "total_number_of_overdue": 0
+         }
+        ],
+        "start_date": "14xx/xx/xx",
+        "total_amount": 1000,
+        "total_number_of_installments": 6,
+        "total_number_of_outstanding": 0,
+        "total_number_of_overdue": 0,
+        "type_of_financing": 2,
+        "type_of_financing_code": "01xxxx",
+        "type_of_financing_title": "سایر",
+        "type_of_installments": "اقساط ثابت",
+        "type_of_installments_code": "01xxxx3"
+       }
+      ],
+      "indirect_contracts": [],
+      "inquiry_histories": [
+       {
+        "bank_name": "بانک پاسارگاد",
+        "date": "20xx-xx-xxTxx:xx:xx.257"
+       }
+      ],
+      "inquiry_stats": [
+       {
+        "contract_negative_status_count": 0,
+        "last_month_inquiry_count": 0,
+        "last_year_inquiry_count": 0,
+        "organization_type": "بانک مرکزی",
+        "organization_type_code": "010xxx3",
+        "person_negative_status_count": 0,
+        "role_type": 0
+       },
+       {
+        "contract_negative_status_count": 0,
+        "last_month_inquiry_count": 0,
+        "last_year_inquiry_count": 1,
+        "organization_type": "بانک ها و موسسات اعتباری",
+        "organization_type_code": "01xxx3",
+        "person_negative_status_count": 0,
+        "role_type": 0
+       },
+       {
+        "contract_negative_status_count": 0,
+        "last_month_inquiry_count": 0,
+        "last_year_inquiry_count": 0,
+        "organization_type": "تلکام/سازمان هاي خدماتی",
+        "organization_type_code": "01xxxx3",
+        "person_negative_status_count": 0,
+        "role_type": 0
+       },
+       {
+        "contract_negative_status_count": 0,
+        "last_month_inquiry_count": 0,
+        "last_year_inquiry_count": 0,
+        "organization_type": "سازمان های خرده فروشی",
+        "organization_type_code": "01xxxx3",
+        "person_negative_status_count": 0,
+        "role_type": 0
+       },
+       {
+        "contract_negative_status_count": 0,
+        "last_month_inquiry_count": 0,
+        "last_year_inquiry_count": 0,
+        "organization_type": "سازمان های عمومی/دولتی",
+        "organization_type_code": "01xxxx33",
+        "person_negative_status_count": 0,
+        "role_type": 0
+       },
+       {
+        "contract_negative_status_count": 0,
+        "last_month_inquiry_count": 0,
+        "last_year_inquiry_count": 0,
+        "organization_type": "سازمان های قضايی",
+        "organization_type_code": "01xxxx33",
+        "person_negative_status_count": 0,
+        "role_type": 0
+       },
+       {
+        "contract_negative_status_count": 0,
+        "last_month_inquiry_count": 0,
+        "last_year_inquiry_count": 0,
+        "organization_type": "مصرف کنندگان",
+        "organization_type_code": "01xxxx33",
+        "person_negative_status_count": 0,
+        "role_type": 0
+       },
+       {
+        "contract_negative_status_count": 0,
+        "last_month_inquiry_count": 0,
+        "last_year_inquiry_count": 0,
+        "organization_type": "موسسات اعتباري غير متشکل",
+        "organization_type_code": "01xxxx3",
+        "person_negative_status_count": 0,
+        "role_type": 0
+       },
+       {
+        "contract_negative_status_count": 0,
+        "last_month_inquiry_count": 0,
+        "last_year_inquiry_count": 0,
+        "organization_type": "موسسات صادر کننده کارت اعتباری",
+        "organization_type_code": "01xxxx3",
+        "person_negative_status_count": 0,
+        "role_type": 0
+       }
+      ],
+      "judiciary": {
+       "judiciary_data": {
+        "accounting_date": "20xx-xx-xxTxx:xx:xxZ",
+        "bankruptcy_count": 0,
+        "error_code": "",
+        "error_description": "",
+        "insolvency_count": 0,
+        "insolvency_sum_penalty": 0,
+        "national_code": "0017xxxxxx7",
+        "sum_execute_count": 0,
+        "sum_execute_sum_penalty_amount": 0,
+        "sum_not_execute_count": 0,
+        "sum_not_execute_sum_penalty_amount": 0
+       },
+       "status": 200
+      },
+      "person_negative_status": [
+       {
+        "date": "140x/xx/xx",
+        "organization_name": "بانک پاسارگاد",
+        "organization_name_code": "01xxxx3",
+        "organization_type": "بانک ها و موسسات اعتباری",
+        "organization_type_code": "01xxxx",
+        "state": "فاقد وضعیت منفی",
+        "state_code": "01xxxxx3"
+       },
+       {
+        "date": "140x/xx/xx",
+        "organization_name": "بانک مرکزی جمهوری اسلامی ایران",
+        "organization_name_code": "01xxxx3",
+        "organization_type": "بانک مرکزی",
+        "organization_type_code": "01xxxx3",
+        "state": "فاقد وضعیت منفی",
+        "state_code": "01xxxxx33"
+       }
+      ],
+      "person_roles": [
+       {
+        "code": "01xxxx3",
+        "number_of_contracts": 0,
+        "title": "متقاضی اصلی"
+       },
+       {
+        "code": "01xxxx3",
+        "number_of_contracts": 0,
+        "title": "ضامن"
+       }
+      ],
+      "personal_information": {
+       "birth_date": "13xx/x1/x0",
+       "father_name": "محمد",
+       "first_name": "علی",
+       "gender": "مرد",
+       "has_blocked_contract": true,
+       "last_name": "علیپور",
+       "marital_status": "مجرد",
+       "national_code": "002xxxxxx7"
+      },
+      "pichak": {
+       "person_cheques_data": {
+        "national_code": "00xxxxxxx17",
+        "person_cheque_items": [
+         {
+          "check_status_id": 55,
+          "check_status_title": "نقدشده",
+          "count": 0,
+          "total_amount": 0
+         },
+         {
+          "check_status_id": 66,
+          "check_status_title": "باطل شده",
+          "count": 0,
+          "total_amount": 0
+         },
+         {
+          "check_status_id": 77,
+          "check_status_title": "برگشتی",
+          "count": 0,
+          "total_amount": 0
+         },
+         {
+          "check_status_id": 88,
+          "check_status_title": "سررسیدآتی",
+          "count": 0,
+          "total_amount": 0
+         },
+         {
+          "check_status_id": 99,
+          "check_status_title": "چک تضمینی",
+          "count": 0,
+          "total_amount": 0
+         }
+        ],
+        "sum_count": 0,
+        "sum_total_amount": 0
+       },
+       "status": 200
+      },
+      "score": {
+       "description": "ریسک متوسط",
+       "inquiry_created_date": "14xx/x8/x7 13:25:306",
+       "previous_score": false,
+       "previous_score_date": null,
+       "risk": "C2",
+       "score": 555,
+       "score_codes": [
+        {
+         "code": "NGS1",
+         "description": "تعداد کم ماه‌های با وضعیت مناسب بازپرداختی در حداقل یک وام طی 6 ماه اخیر"
+        },
+        {
+         "code": "NGL1",
+         "description": "تعداد کم ماه‌های با وضعیت مناسب بازپرداختی در حداقل یک وام طی 3 سال اخیر"
+        },
+        {
+         "code": "MTA1",
+         "description": "عدم وجود وام‌های با مبالغ بالا طی 2 سال اخیر"
+        },
+        {
+         "code": "AGE1",
+         "description": "رده سنی بسیار جوان "
+        },
+        {
+         "code": "MTX1",
+         "description": "مبلغ پایین حداقل مالیات سالانه‌ی پرداخت شده‌ی حقوق و دستمزد طی 4 سال اخیر"
+        }
+       ],
+       "score_type": "در محاسبه امتیاز اعتباری (که بر اساس مدل جدید می‌باشد) از اطلاعات سوابق تسهیلاتی، چک‌های برگشتی، مالیاتی و محکومیت‌های مالی شخص استفاده می‌شود"
+      },
+      "summary_related_contracts": [
+       {
+        "currency": "ریال",
+        "currency_code": "01xxxx3",
+        "in_progress_contracts_count": 0,
+        "organization_id": 18,
+        "organization_name": "بانک پاسارگاد",
+        "organization_name_code": "02xxxx1",
+        "outstanding_amount": 0,
+        "overdue_amount": 0,
+        "role_type": 0,
+        "terminated_contracts_count": 1,
+        "total_amount": 10000,
+        "type_of_financing": "تسهیلات",
+        "type_of_financing_code": "01xxxx"
+       }
+      ],
+      "tax": {
+       "status": 200,
+       "tax_result": [
+        {
+         "accounting_date": null,
+         "bedehi_jarimeh_amalkard": null,
+         "bedehi_maliat_amalkard": null,
+         "dar_moed": null,
+         "daramad_ebrazi": null,
+         "etelate_vosol_o_ejra": false,
+         "is_maliat_pardakhti_type_and_date": null,
+         "is_maliatghati_type_and_date": null,
+         "jarayem": null,
+         "maliat_ebrazi": null,
+         "maliat_ghati": null,
+         "maliat_tashkhisi": null,
+         "maliat_vosoli": null,
+         "maliate_hoghoghi_pardakhti_karfarma": null,
+         "maliate_hoghoghi_pardakhti_karmand": null,
+         "national_code": null,
+         "year": 1404
+        },
+        {
+         "accounting_date": null,
+         "bedehi_jarimeh_amalkard": null,
+         "bedehi_maliat_amalkard": null,
+         "dar_moed": null,
+         "daramad_ebrazi": null,
+         "etelate_vosol_o_ejra": false,
+         "is_maliat_pardakhti_type_and_date": null,
+         "is_maliatghati_type_and_date": null,
+         "jarayem": null,
+         "maliat_ebrazi": null,
+         "maliat_ghati": null,
+         "maliat_tashkhisi": null,
+         "maliat_vosoli": null,
+         "maliate_hoghoghi_pardakhti_karfarma": null,
+         "maliate_hoghoghi_pardakhti_karmand": null,
+         "national_code": null,
+         "year": 1403
+        },
+        {
+         "accounting_date": null,
+         "bedehi_jarimeh_amalkard": null,
+         "bedehi_maliat_amalkard": null,
+         "dar_moed": null,
+         "daramad_ebrazi": null,
+         "etelate_vosol_o_ejra": false,
+         "is_maliat_pardakhti_type_and_date": null,
+         "is_maliatghati_type_and_date": null,
+         "jarayem": null,
+         "maliat_ebrazi": null,
+         "maliat_ghati": null,
+         "maliat_tashkhisi": null,
+         "maliat_vosoli": null,
+         "maliate_hoghoghi_pardakhti_karfarma": null,
+         "maliate_hoghoghi_pardakhti_karmand": null,
+         "national_code": null,
+         "year": 1402
+        },
+        {
+         "accounting_date": null,
+         "bedehi_jarimeh_amalkard": null,
+         "bedehi_maliat_amalkard": null,
+         "dar_moed": null,
+         "daramad_ebrazi": null,
+         "etelate_vosol_o_ejra": false,
+         "is_maliat_pardakhti_type_and_date": null,
+         "is_maliatghati_type_and_date": null,
+         "jarayem": null,
+         "maliat_ebrazi": null,
+         "maliat_ghati": null,
+         "maliat_tashkhisi": null,
+         "maliat_vosoli": null,
+         "maliate_hoghoghi_pardakhti_karfarma": null,
+         "maliate_hoghoghi_pardakhti_karmand": null,
+         "national_code": null,
+         "year": 1401
+        },
+        {
+         "accounting_date": null,
+         "bedehi_jarimeh_amalkard": null,
+         "bedehi_maliat_amalkard": null,
+         "dar_moed": null,
+         "daramad_ebrazi": null,
+         "etelate_vosol_o_ejra": false,
+         "is_maliat_pardakhti_type_and_date": null,
+         "is_maliatghati_type_and_date": null,
+         "jarayem": null,
+         "maliat_ebrazi": null,
+         "maliat_ghati": null,
+         "maliat_tashkhisi": null,
+         "maliat_vosoli": null,
+         "maliate_hoghoghi_pardakhti_karfarma": null,
+         "maliate_hoghoghi_pardakhti_karmand": null,
+         "national_code": null,
+         "year": 1400
+        }
+       ]
+      }
+     },
+     "service": "استعلام اعتبارسنجی",
+     "status": "completed"
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  }
+ },
+ "/services/inquiry/credit_inquiry/send_otp": {
+  "200": {
+   "reference_id": "<<ID>>",
+   "status": "pending"
+  }
+ },
+ "/services/inquiry/enamad_inquiry": {
+  "200": {
+   "response_body": {
+    "data": {
+     "approve_date": "1389/12/19",
+     "city_name": "تهران",
+     "domain": "digikala.com",
+     "expired": false,
+     "expiry_date": "1404/12/03",
+     "id": 19077,
+     "logolevel": 4,
+     "message": "نماد دارد.",
+     "name": "نو آوران فن آوازه ",
+     "nameper": "دیجی کالا",
+     "srv_text": "جمع سپاری مالی- هدیه محور,فروشگاه  بزرگ چندمنظوره,فروش طلا و جواهر,",
+     "state_name": "تهران"
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  }
+ },
+ "/services/inquiry/iban": {
+  "200": {
+   "response_body": {
+    "data": {
+     "bank_name": "آينده",
+     "is_transferable": true,
+     "name": "خیریه‌ تو‌انبخشی‌ بچه‌ ‌های‌ ‌آسمان‌ کامر‌ان‌"
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  }
+ },
+ "/services/inquiry/national_card_ocr": {
+  "200": {
+   "response_body": {
+    "data": {
+     "back": null,
+     "front": {
+      "birth_date": "1369/07/11",
+      "city": "قم",
+      "expiration_date": "1353/07/15",
+      "face_photo": "عکس صاحب کارت ملی به فرمت base64",
+      "father_name": "عبداله",
+      "first_name": "عين الله",
+      "last_name": "متقی زاده",
+      "national_code": "0370362063",
+      "province": "قم",
+      "result": true
+     }
+    },
+    "error": null,
+    "message": "موفق"
+   },
+   "result": 1
+  }
+ },
+ "/services/inquiry/national_identity_inquiry": {
+  "200": {
+   "response_body": {
+    "data": {
+     "alive": true,
+     "father_name": "نام پدر",
+     "first_name": "نام",
+     "is_dead": false,
+     "last_name": "نام خانوادگی",
+     "matched": true,
+     "national_code": "002xxxxxxx"
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  },
+  "400": {
+   "response_body": {
+    "data": {},
+    "error_code": "invalid",
+    "message": "birth_date: Invalid Jalali date."
+   },
+   "result": 6
+  }
+ },
+ "/services/inquiry/persian_to_finglish": {
+  "200": {
+   "response_body": {
+    "data": {
+     "finglish_text": "mohammad naderi"
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  }
+ },
+ "/services/inquiry/postal_code_inquiry": {
+  "200": {
+   "response_body": {
+    "data": {
+     "address": {
+      "building_name": "-",
+      "description": "-",
+      "district": "انقلاب-فلسطین",
+      "floor": "-1",
+      "number": 1302,
+      "province": "تهران",
+      "side_floor": "4",
+      "street": "خیابان 12 فروردین",
+      "street2": "خیابان انقلاب اسلامی",
+      "town": "تهران"
+     }
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  }
+ },
+ "/services/inquiry/shahkar": {
+  "200": {
+   "response_body": {
+    "data": {
+     "matched": true
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  },
+  "400": {
+   "response_body": {
+    "data": {},
+    "error_code": "invalid",
+    "message": "national_code: National code is wrong"
+   },
+   "result": 6
+  }
+ },
+ "/services/inquiry/vehicle_inquiry/total_violations": {
+  "200": {
+   "response_body": {
+    "data": {
+     "ejr_inquire_no": "9XXXXXXXX0",
+     "inquire_price": "10000000",
+     "page_count": 0,
+     "paper_id": "1XXXXXXXXX196",
+     "payment_id": "6XXXXXXX15",
+     "plate": " شخصي  ايران۱۱  ــ  ۱۱۱ب۱۱",
+     "price_status": "1",
+     "warning_price": "10000000"
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  }
+ },
+ "/services/inquiry/vehicle_inquiry/violations_details": {
+  "200": {
+   "response_body": {
+    "data": {
+     "warnings": [
+      {
+       "final_price": "200000",
+       "has_image": false,
+       "investigation_ability": false,
+       "paper_id": "56XXXXXXXXX99",
+       "payment_id": "11111111",
+       "serial_no": "0XXXXXXXXXX6",
+       "violation_delivery_type": {
+        "violation_delivery_type": "تسليمي"
+       },
+       "violation_occure_date": "1399/01/25 - 13:06",
+       "violation_occure_time": 786,
+       "violation_type": {
+        "violation_type": "همراه نداشتن گواهي يا برچسب معتبر معاينه فني",
+        "violation_type_id": "2163"
+       },
+       "violatoin_address": "تهران بزرگراه يادگار",
+       "warning_id": "1111111111"
+      },
+      {
+       "final_price": "300000",
+       "has_image": false,
+       "investigation_ability": false,
+       "paper_id": "56XXXXXXXXX98",
+       "payment_id": "11111111",
+       "serial_no": "0XXXXXXXXXX6",
+       "violation_delivery_type": {
+        "violation_delivery_type": "تسليمي"
+       },
+       "violation_occure_date": "1399/01/25 - 13:06",
+       "violation_occure_time": 786,
+       "violation_type": {
+        "violation_type": "باز گذاشتن درب صندوق عقب وسيله نقليه در حال حركت، ",
+        "violation_type_id": "2156"
+       },
+       "violatoin_address": "تهران بزرگراه يادگار",
+       "warning_id": "1111111111"
+      }
+     ]
+    },
+    "error_code": null,
+    "message": "موفق"
+   },
+   "result": 1
+  }
+ }
+}
